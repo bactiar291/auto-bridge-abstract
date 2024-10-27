@@ -11,6 +11,18 @@ init(autoreset=True)
 
 load_dotenv()
 
+os.system('cls' if os.name == 'nt' else 'clear')
+
+def display_banner():
+    print(Fore.YELLOW + "========================================")
+    print(Fore.CYAN + emoji.emojize(":rocket:") + " AUTHOR : ANAM BACTIAR")
+    print(Fore.MAGENTA + emoji.emojize(":star:") + " THANKS TO : ANAM BACTIAR!")
+    print(Fore.BLUE + emoji.emojize(":globe_with_meridians:") + " GITHUB: https://github.com/bactiar291")
+    print(Fore.GREEN + emoji.emojize(":coffee:") + " BUY COFFEE FOR ME: 0x648dce97a403468dfc02c793c2b441193fccf77b ")
+    print(Fore.YELLOW + "========================================\n")
+
+display_banner()
+
 sepolia_rpc_url = "https://rpc.sepolia.org"
 abstract_rpc_url = "https://api.testnet.abs.xyz/"
 
