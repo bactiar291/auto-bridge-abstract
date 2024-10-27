@@ -128,7 +128,7 @@ def clear_terminal():
 
 while True:
     bridge_to_abstract()
-    time.sleep(10)
+    time.sleep(20)
     bridge_to_sepolia()
-    time.sleep(10)
+    time.sleep(20)
     clear_terminal()
