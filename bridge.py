@@ -41,7 +41,7 @@ from_address = os.getenv("FROM_ADDRESS")
 private_key = os.getenv("PRIVATE_KEY")
 bridge_contract_address = os.getenv("BRIDGE_CONTRACT_ADDRESS")
 
-bridge_abi = json.loads("""
+bridge_abi = json.loads(""" 
 [
     {
         "constant": false,
@@ -60,6 +60,7 @@ sepolia_bridge_contract = sepolia_web3.eth.contract(address=bridge_contract_addr
 abstract_bridge_contract = abstract_web3.eth.contract(address=bridge_contract_address, abi=bridge_abi)
 
 def get_current_gas_price(web3_instance):
+    # Dapatkan harga gas terkini menggunakan `eth_gas_price`
     return web3_instance.eth.gas_price
 
 def generate_random_amount():
